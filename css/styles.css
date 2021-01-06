@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  padding: 15px 30px;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background: #f0f3fa;
+  text-align: center;
+}
+.card:before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: red;
+}
