@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header" >
     <div class="wrapper">
       <h1>Social Media Dashboard</h1>
       <p>Total Followers: 23,004</p>
@@ -17,19 +17,71 @@
   </header>
   <section>
     <div class="wrapper">
-      <article class="card">
-        <p>
-          <img src="./images//icon-facebook.svg" alt="facebook-icon">
-          @matespinosa
-        </p>
-        <p>
-          <span>1987</span>
-          <span>Followers</span>
-        </p>
-        <p>
-          12 Today
-        </p>
-      </article>
+      <div class="grid">
+        <article class="card">
+          <p class="card-nickname">
+            <img src="./images//icon-facebook.svg" alt="facebook-icon">
+            @matespinosa
+          </p>
+          <p class="card-followers">
+            <span class="card-followers-number">1987</span>
+            <!-- <br> -->
+            <span class="card-followers-title">Followers</span>
+          </p>
+          <p class="card-today">
+            <img src="images/icon-up.svg" alt="icon-up">
+            12 Today
+          </p>
+        </article>
+        
+        <article class="card">
+          <p class="card-nickname">
+            <img src="./images//icon-twitter.svg" alt="facebook-icon">
+            @matespinosa
+          </p>
+          <p class="card-followers">
+            <span class="card-followers-number">285</span>
+            <!-- <br> -->
+            <span class="card-followers-title">Followers</span>
+          </p>
+          <p class="card-today">
+            <img src="images/icon-up.svg" alt="icon-up">
+            15 Today
+          </p>
+        </article>
+        
+        <article class="card">
+          <p class="card-nickname">
+            <img src="./images//icon-instagram.svg" alt="facebook-icon">
+            @matespinosa
+          </p>
+          <p class="card-followers">
+            <span class="card-followers-number">600</span>
+            <!-- <br> -->
+            <span class="card-followers-title">Followers</span>
+          </p>
+          <p class="card-today">
+            <img src="images/icon-up.svg" alt="icon-up">
+            20 Today
+          </p>
+        </article>
+        
+        <article class="card">
+          <p class="card-nickname">
+            <img src="./images//icon-youtube.svg" alt="facebook-icon">
+            @matespinosa
+          </p>
+          <p class="card-followers">
+            <span class="card-followers-number">5k</span>
+            <!-- <br> -->
+            <span class="card-followers-title">Followers</span>
+          </p>
+          <p class="card-today">
+            <img src="images/icon-up.svg" alt="icon-up">
+            35 Today
+          </p>
+        </article>
+      </div>
     </div>
   </section>
   <section>
