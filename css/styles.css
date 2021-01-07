@@ -8,6 +8,7 @@
   --instagram-2: hsl(329, 70%, 58%);
   --youTube: hsl(348, 97%, 39%);
   --gray: #5f616d;
+  --cardGray: #f0f3fa;
 }
 * {
   margin: 0;
@@ -34,7 +35,7 @@
   color: var(--gray);
   font-weight: 600;
   margin-top: 0.5em;
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
   padding-bottom: 1.5em;
 }
 
@@ -56,7 +57,7 @@
 .card {
   border-radius: 8px;
   overflow: hidden;
-  background: #f0f3fa;
+  background: var(--cardGray);
   text-align: center;
   padding: 1.7em 0;
   position: relative;
@@ -145,7 +146,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1em;
-  background: #f0f3fa;
+  background: var(--cardGray);
   border-radius: 8px;
   padding: 1.7em;
 }
@@ -195,11 +196,71 @@
 
 @media screen and (min-width: 480px) {
   .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 25px;
   }
   .wrapper {
     max-width: 1440px;
     margin: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cardGray: #252b43;
+    --gray: #8088ad;
+  }
+  body {
+    background: #1d2029;
+    color: white;
+  }
+  .header {
+    background: #1d2029;
+  }
+  h1 {
+    color: white;
+  }
+  .wrapper > p {
+    color: #8088ad;
+  }
+  .card-followers-number {
+    color: white;
+  }
+  .card-followers-title {
+    color: #8088ad;
+  }
+  .card-today {
+    color: white;
+  }
+  .card-small-number {
+    color: white;
+  }
+  .card-small-views {
+    color: #8088ad;
+  }
+  .card-title {
+    color: var(--gray);
   }
 }
